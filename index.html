@@ -4,7 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Bars</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .bar {
+            width: 150px;
+            height: 40px;
+            background-color: #3498db;
+            margin: 10px;
+            display: inline-block;
+            text-align: center;
+            line-height: 40px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .bar:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .bar:nth-child(2) {
+            background-color: #e74c3c;
+        }
+
+        .bar:nth-child(3) {
+            background-color: #2ecc71;
+        }
+    </style>
 </head>
 <body>
     <div class="bar">About</div>
